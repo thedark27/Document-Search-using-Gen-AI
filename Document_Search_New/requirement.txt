@@ -1,0 +1,7 @@
+faiss-cpu==1.7.4
+fuzzywuzzy==0.18.0
+langchain==0.0.225
+openai==0.27.8
+PyPDF2==3.0.1
+flask
+
