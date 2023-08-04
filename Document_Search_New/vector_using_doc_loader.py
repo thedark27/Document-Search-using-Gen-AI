@@ -30,7 +30,7 @@ def create(pdfs):
     vec_list=get_already_vec('trac.txt')  #list of all already processed pdf
     
     if len(vec_list) == 0:
-        name = pdfs[0].split('\\')[-1]
+        name = pdfs[0].split('/')[-1]
         print(name)
         with open(pdfs[0], 'rb') as source_file:
             with open('static/vec_junction/'+name, 'wb+') as destination_file:
@@ -56,7 +56,7 @@ def create(pdfs):
     vectorstore = load_vec()        
     for pdf in pdfs:
         vec_list = get_already_vec('trac.txt')
-        name = pdf.split('\\')[-1]
+        name = pdf.split('/')[-1]
         if name not in vec_list:
             print(name)
             with open(pdf, 'rb') as source_file:
