@@ -42,7 +42,7 @@ def end():
 def yes():
     pdfs=extract_pdf_files('static/pdf_junction')
     for pdf in pdfs:
-        name=pdf.split('\\')[-1]
+        name=pdf.split('/')[-1]
         with open(pdf, 'rb') as source_file:
             with open('static/PDFS/'+name, 'wb+') as destination_file:
                     destination_file.write(source_file.read())
@@ -65,7 +65,7 @@ def process_pdfs():
     already_pdf=extract_pdf_files('static/PDFS')
     already_pdf1=[]
     for pdf in already_pdf:
-        already_pdf1.append(pdf.split('\\')[-1])
+        already_pdf1.append(pdf.split('/')[-1])
         
  
     uploaded_files = request.files.getlist('pdfs')
