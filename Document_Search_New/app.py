@@ -109,11 +109,6 @@ def delete_pdfs():
         if filename.endswith('.pdf'):
             os.remove(os.path.join(processed_folder, filename))
             
-    processed_folder = 'static/mapping'
-    for filename in os.listdir(processed_folder):
-        if filename.endswith('.csv'):
-            os.remove(os.path.join(processed_folder, filename))
-            
     processed_folder = 'static/High'
     for filename in os.listdir(processed_folder):
         if filename.endswith('.pdf'):
