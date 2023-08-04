@@ -118,7 +118,7 @@ def new_chain(vectorstore,search):
     pdf_name=[]
     page_numb={}
     for i in dic:
-        name = i.split('\\')[-1]
+        name = i.split('/')[-1]
         page_num=[]
         page_con=[]    
         for j in dic[i]:
