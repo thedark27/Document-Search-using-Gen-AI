@@ -2,7 +2,7 @@
 Document Search using Gen AI is an intelligent solution for efficient retrieval of information from vast document repositories. It leverages Generative AI to deliver highly accurate and contextually relevant search results, enhancing productivity and decision-making for various domains.
 
 
-In this system, you have the option to select any PDF document. Upon initiating the processing, the system will generate a vector representation of the document's content and store it locally.
+In the upload pdf section, we have the option to select any PDF document. Upon initiating the processing, the system will generate a vector representation of the document's content and store it locally.
 
 ![Screenshot (146)](https://github.com/thedark27/Document-Search-using-Gen-AI/assets/60995014/d35e6d0e-75cc-4091-9cdd-859c034944e6)
 
