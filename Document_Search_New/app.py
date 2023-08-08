@@ -137,10 +137,7 @@ def delete_pdfs():
             
 
             
-    processed_folder = 'static/table'
-    for filename in os.listdir(processed_folder):
-        if filename.endswith('.csv'):
-            os.remove(os.path.join(processed_folder, filename))        
+        
     
     with open('trac.txt', 'w') as file:
         pass        
